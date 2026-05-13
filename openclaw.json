@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-17T11:20:11.594Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T11:20:11.307Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "github-copilot:github": {
+        "provider": "github-copilot",
+        "mode": "token"
+      },
+      "gemini:google": {
+        "provider": "gemini",
+        "mode": "api_key",
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "github-copilot/gpt-4o"
+      },
+      "models": {
+        "github-copilot/claude-opus-4.6": {},
+        "github-copilot/claude-sonnet-4.6": {},
+        "github-copilot/claude-sonnet-4": {},
+        "github-copilot/claude-haiku-4.5": {},
+        "github-copilot/gemini-3.1-pro-preview": {},
+        "github-copilot/gpt-5.3-codex": {},
+        "gemini/gemini-3.1-pro-preview": {},
+        "gemini/gemini-2.0-flash": {},
+        "gemini/gemini-1.5-pro": {},
+        "gemini/gemini-1.5-flash": {}
+      },
+      "workspace": "C:\\Users\\chris\\.openclaw\\workspace"
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "gemini",
+        "gemini": {
+          "apiKey": "-"
+        }
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "discord": {
+      "enabled": true,
+      "token": "-",
+      "groupPolicy": "allowlist",
+      "streaming": "off",
+      "guilds": {
+        "1483411669299367967": {
+          "requireMention": false,
+          "users": [
+            "811060559885500448"
+          ]
+        }
+      }
+    },
+    "line": {
+      "enabled": true
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "-"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "nano-banana-pro": {
+        "apiKey": "-"
+      },
+      "notion": {
+        "apiKey": "-"
+      }
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "C:\\Users\\chris\\AppData\\Roaming\\npm\\node_modules\\openclaw\\extensions\\line"
+      ]
+    },
+    "entries": {
+      "line": {
+        "enabled": true
+      }
+    }
+  }
+}
